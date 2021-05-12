@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    @media screen and (max-width: 768px) {}
+</style>
+
+<body>
+    <div class="your-element" data-tilt></div>
+    <main>
+        <section class="glass">
+            <div class="dashboard">
+                <div class="user">
+                    <img src="./images/avatar2.jpg" alt="">
+                    <h3>Marlon Dietrich</h3>
+                    <p>Solteiro, 23 anos<br>
+                        Guaíba - RS<br>
+                        Estudante e estagiário<br> de desenvolvimento
+                    </p>
+                </div>
+
+                <div class="links">
+                    <div>
+                        <a href="https://www.linkedin.com/in/maarlond" class="link">
+                            <img src="./images/linkedin.png" width="50" alt="">
+                            <h2>Linkedin</h2>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/maarlond" class="link">
+                            <img src="./images/github.png" width="50" alt="">
+                            <h2>Github</h2>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/_dietrichz" class="link">
+                            <img src="./images/twitter.png" width="50" alt="">
+                            <h2>Twitter</h2>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="mailto:maarlondietrich@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:maarlondietrich@gmail.com" target="_blank" class="link"><img
+                                src="./images/email.png" width="50" alt="">
+                            <h2>E-mail</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <h2> Hello World</h2>
+                    <img src="./images/coding.png" width="100" alt="">
+                </div>
+            </div>
+            <div class="languages">
+                <div class="status">
+                    <h1>Web Developer</h1>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="./images/html5.png" width="100" alt="">
+                        <div class="card-info">
+                            <h2>HTML DEVELOPMENT</h2>
+                            <p>HTML PROGRESS</p>
+                            <div class="progress" id="progresshtml"></div>
+                        </div>
+                        <h2 class="percentage">50%</h2>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/css.png" width="100" alt="">
+                        <div class="card-info">
+                            <h2>CSS DEVELOPMENT</h2>
+                            <p>CSS PROGRESS</p>
+                            <div class="progress" id="progresscss"></div>
+                        </div>
+                        <h2 class="percentage">30%</h2>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/js.png" width="100" alt="">
+                        <div class="card-info">
+                            <h2>JS DEVELOPMENT</h2>
+                            <p>JS PROGRESS</p>
+                            <div class="progress" id="progressjs"></div>
+                        </div>
+                        <h2 class="percentage">30%</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./images/php.png" width="100" alt="">
+                        <div class="card-info">
+                            <h2>PHP DEVELOPMENT</h2>
+                            <p>PHP PROGRESS</p>
+                            <div class="progress" id="progressphp"></div>
+                        </div>
+                        <h2 class="percentage">20%</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</body>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+    var width = screen.width;
+
+    if (width >= 900) {
+        alert(width);
+        VanillaTilt.init(document.querySelector(".glass"), {
+            max: 5,
+            speed: 300
+        });
+    }
+
+</script>
+
+</html>
